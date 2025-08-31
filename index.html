@@ -1,31 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Hamzah Issa | Portfolio</title>
-  <link rel="stylesheet" href="./styles.css" />
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#0ea5e9">
+<meta name="description" content="Portfolio of Hamzah Issa — BSc Software Engineering student at the University of Leicester." />
+<meta property="og:title" content="Hamzah Issa | Portfolio" />
+<meta property="og:description" content="Projects, experience, and contact details." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="assets/placeholder-profile.svg" />
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="styles.css" />
+<script defer src="script.js"></script>
+
 </head>
 <body>
-<header>
-  <h1>Hamzah Issa</h1>
-  <nav>
+<header class="site-header">
+  <a class="brand" href="index.html" aria-label="Go to home">
+    <img src="assets/favicon.svg" alt="" class="brand-mark" width="28" height="28" />
+    <span class="brand-text">Hamzah Issa</span>
+  </a>
+  <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle menu">
+    <span class="nav-toggle-bar"></span>
+    <span class="nav-toggle-bar"></span>
+    <span class="nav-toggle-bar"></span>
+  </button>
+  <nav id="primary-nav" class="primary-nav" aria-label="Main">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="projects.html">Projects</a>
     <a href="contact.html">Contact</a>
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode"></button>
   </nav>
 </header>
 
-<main>
-  <section class="intro">
-    <h2>Welcome to my portfolio</h2>
-    <p>I'm a BSc Software Engineering student at University of Leicester.</p>
+<main class="container">
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Hi, I'm Hamzah 👋</h1>
+      <p class="lead">BSc Software Engineering student at the University of Leicester (2024–2028, with placement year). I enjoy building clean, reliable software with Java, Spring Boot, and modern web tech.</p>
+      <div class="hero-cta">
+        <a class="btn primary" href="projects.html">See my projects</a>
+        <a class="btn" href="Hamzah_Software_CV.pdf" download>Download my CV</a>
+      </div>
+      <ul class="quick-highlights">
+        <li>Java · Spring Boot · REST APIs</li>
+        <li>HTML · CSS · JavaScript</li>
+        <li>Docker · SQL · Git</li>
+      </ul>
+    </div>
+    <picture class="hero-art">
+      <img src="assets/placeholder-profile.svg" alt="Illustration of Hamzah working on code" />
+    </picture>
+  </section>
+
+  <section class="grid-3 features" aria-label="Core skills">
+    <article class="card">
+      <h3>Backend</h3>
+      <p>Java, Spring Boot, RESTful APIs, SQL, Docker, microservices fundamentals.</p>
+    </article>
+    <article class="card">
+      <h3>Frontend</h3>
+      <p>Accessible, responsive UIs with semantic HTML, modern CSS, and vanilla JS.</p>
+    </article>
+    <article class="card">
+      <h3>Teamwork</h3>
+      <p>Agile, Git workflows, clear documentation, and pragmatic problem-solving.</p>
+    </article>
   </section>
 </main>
-
-<footer>
-  <p>© 2025 Hamzah Issa</p>
+<footer class="site-footer">
+  <p>© <span id="year"></span> Hamzah Issa · <a href="mailto:hamzah.issa@gmail.com">hamzah.issa@gmail.com</a> · <a href="https://linkedin.com/in/hamzah" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/hamzah" target="_blank" rel="noopener">GitHub</a></p>
 </footer>
+
 </body>
 </html>

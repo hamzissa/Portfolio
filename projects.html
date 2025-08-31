@@ -1,10 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <title>Projects · Hamzah Issa | Portfolio</title>
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#0ea5e9">
+<meta name="description" content="Portfolio of Hamzah Issa — BSc Software Engineering student at the University of Leicester." />
+<meta property="og:title" content="Hamzah Issa | Portfolio" />
+<meta property="og:description" content="Projects, experience, and contact details." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="assets/placeholder-profile.svg" />
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="styles.css" />
+<script defer src="script.js"></script>
+
 </head>
 <body>
+<header class="site-header">
+  <a class="brand" href="index.html" aria-label="Go to home">
+    <img src="assets/favicon.svg" alt="" class="brand-mark" width="28" height="28" />
+    <span class="brand-text">Hamzah Issa</span>
+  </a>
+  <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle menu">
+    <span class="nav-toggle-bar"></span>
+    <span class="nav-toggle-bar"></span>
+    <span class="nav-toggle-bar"></span>
+  </button>
+  <nav id="primary-nav" class="primary-nav" aria-label="Main">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode"></button>
+  </nav>
+</header>
+
+<main class="container">
+  <section class="page-head">
+    <h1>Projects</h1>
+    <p class="lead">A few things I’ve built and tinkered with.</p>
+  </section>
+
+  <section class="projects-grid">
+    <article class="project-card">
+      <div class="project-card-body">
+        <h3>FitAll Gym Management System</h3>
+        <p>Java OOP project featuring booking & scheduling, plus UML diagrams and MVC structure.</p>
+        <ul class="meta">
+          <li>Java</li><li>UML</li><li>MVC</li>
+        </ul>
+      </div>
+      <div class="project-card-actions">
+        <a class="btn small" href="#" aria-disabled="true">Code (private)</a>
+        <a class="btn small" href="#" aria-disabled="true">Demo</a>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-card-body">
+        <h3>Zombie Survival Game</h3>
+        <p>Godot/GDScript A‑Level project with enemy AI, scoring, and UI elements.</p>
+        <ul class="meta">
+          <li>Godot</li><li>GDScript</li>
+        </ul>
+      </div>
+      <div class="project-card-actions">
+        <a class="btn small" href="#" aria-disabled="true">Code</a>
+        <a class="btn small" href="#" aria-disabled="true">Play</a>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-card-body">
+        <h3>Portfolio Website</h3>
+        <p>Responsive site (this one!) with accessible HTML, modern CSS, JS enhancements, and dark mode.</p>
+        <ul class="meta">
+          <li>HTML</li><li>CSS</li><li>JS</li>
+        </ul>
+      </div>
+      <div class="project-card-actions">
+        <a class="btn small" href="https://github.com/hamzah" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn small" href="index.html">Live</a>
+      </div>
+    </article>
+  </section>
+</main>
+<footer class="site-footer">
+  <p>© <span id="year"></span> Hamzah Issa · <a href="mailto:hamzah.issa@gmail.com">hamzah.issa@gmail.com</a> · <a href="https://linkedin.com/in/hamzah" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/hamzah" target="_blank" rel="noopener">GitHub</a></p>
+</footer>
 
 </body>
 </html>

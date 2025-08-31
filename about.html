@@ -1,10 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <title>About · Hamzah Issa | Portfolio</title>
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#0ea5e9">
+<meta name="description" content="Portfolio of Hamzah Issa — BSc Software Engineering student at the University of Leicester." />
+<meta property="og:title" content="Hamzah Issa | Portfolio" />
+<meta property="og:description" content="Projects, experience, and contact details." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="assets/placeholder-profile.svg" />
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="styles.css" />
+<script defer src="script.js"></script>
+
 </head>
 <body>
+<header class="site-header">
+  <a class="brand" href="index.html" aria-label="Go to home">
+    <img src="assets/favicon.svg" alt="" class="brand-mark" width="28" height="28" />
+    <span class="brand-text">Hamzah Issa</span>
+  </a>
+  <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle menu">
+    <span class="nav-toggle-bar"></span>
+    <span class="nav-toggle-bar"></span>
+    <span class="nav-toggle-bar"></span>
+  </button>
+  <nav id="primary-nav" class="primary-nav" aria-label="Main">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode"></button>
+  </nav>
+</header>
+
+<main class="container">
+  <section class="page-head">
+    <h1>About</h1>
+    <p class="lead">I’m Hamzah Issa, a Software Engineering student focused on building helpful, well‑structured applications.</p>
+  </section>
+
+  <section class="split">
+    <div>
+      <h2>Background</h2>
+      <p>I study at the University of Leicester (BSc Software Engineering, 2024–2028). I’m particularly interested in backend development, data handling, and clean architecture.</p>
+      <h2>Technologies</h2>
+      <ul class="tags">
+        <li>Java</li><li>Spring Boot</li><li>Python</li><li>JavaScript</li><li>HTML/CSS</li><li>SQL</li><li>Docker</li><li>Git</li>
+      </ul>
+      <h2>Currently</h2>
+      <p>Seeking a placement year opportunity where I can contribute to production systems and continue growing my engineering skills.</p>
+    </div>
+    <aside class="aside">
+      <img class="profile" src="assets/placeholder-profile.svg" alt="Illustration placeholder">
+      <div class="card soft">
+        <h3>Quick facts</h3>
+        <ul class="facts">
+          <li>Based in Leicester, UK</li>
+          <li>Badminton & tennis enthusiast</li>
+          <li>Loves tidy Git histories</li>
+        </ul>
+      </div>
+    </aside>
+  </section>
+</main>
+<footer class="site-footer">
+  <p>© <span id="year"></span> Hamzah Issa · <a href="mailto:hamzah.issa@gmail.com">hamzah.issa@gmail.com</a> · <a href="https://linkedin.com/in/hamzah" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/hamzah" target="_blank" rel="noopener">GitHub</a></p>
+</footer>
 
 </body>
 </html>
