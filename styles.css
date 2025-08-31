@@ -109,3 +109,42 @@ body{
 @media (max-width: 520px){
   .projects-grid{grid-template-columns: 1fr}
 }
+.theme-toggle {
+  inline-size: 40px;
+  block-size: 40px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--bg-elev);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.theme-toggle .icon {
+  display: none;
+}
+
+[data-theme="light"] .theme-toggle .sun {
+  display: inline;
+}
+
+[data-theme="dark"] .theme-toggle .moon {
+  display: inline;
+}
+/* Light theme overrides */
+[data-theme="light"]{
+  --bg: #f5f7fb;
+  --bg-elev: #ffffff;
+  --text: #0b0e12;
+  --muted: #4b5563;
+  --card: #ffffff;
+  --border: #e5e7eb;
+  --shadow: 0 8px 24px rgba(0,0,0,.08);
+}
+
+/* Optional: make header less dark in light mode */
+[data-theme="light"] .site-header{
+  background: rgba(255,255,255,.8);
+}
