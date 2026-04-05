@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Contact · Hamzah Issa | Portfolio</title>
   <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="theme-color" content="#0ea5e9">
-<meta name="description" content="Portfolio of Hamzah Issa — BSc Software Engineering student at the University of Leicester." />
-<meta property="og:title" content="Hamzah Issa | Portfolio" />
-<meta property="og:description" content="Projects, experience, and contact details." />
-<meta property="og:type" content="website" />
-<meta property="og:image" content="assets/placeholder-profile.svg" />
-<link rel="icon" href="assets/software_engineering_logo.png" type="image/svg+xml" />
-<link rel="stylesheet" href="styles.css" />
-<script defer src="script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Me | Hamzah Issa</title>
+  <meta name="description" content="Get in touch with Hamzah Issa for collaboration opportunities, placement positions, or general inquiries." />
+  <meta name="theme-color" content="#0ea5e9" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#0ea5e9" media="(prefers-color-scheme: light)" />
+  
+  <meta property="og:title" content="Contact Hamzah Issa" />
+  <meta property="og:description" content="Reach out for collaboration, placement opportunities, or inquiries." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://hamzahissa.com/contact.html" />
+  <meta property="og:image" content="https://hamzahissa.com/assets/software_engineering_logo.png" />
+  
+  <link rel="icon" href="assets/software_engineering_logo.png" />
+  <link rel="canonical" href="https://hamzahissa.com/contact.html" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9QEYBSEJPM"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-9QEYBSEJPM');
   </script>
 </head>
-<!-- Google tag (gtag.js) -->
 
 <body>
 <header class="site-header">
@@ -50,74 +53,77 @@
 
 <main class="container">
   <section class="page-head">
-    <h1>Contact</h1>
-    <p class="lead">Feel free to reach out about projects, placements, or collaboration.</p>
+    <h1>Get in Touch</h1>
+    <p class="lead">Whether you're interested in collaboration, have a placement opportunity, or just want to connect — I'd love to hear from you!</p>
   </section>
 
-  <form action="https://formspree.io/f/myzdpadj" method="POST" class="card form" id="contactForm">
-    <div class="field">
-      <label for="name">Name</label>
-      <input id="name" name="name" required />
-    </div>
+  <div class="contact-container">
+    <form action="https://formspree.io/f/myzdpadj" method="POST" class="card form" id="contactForm" novalidate>
+      <div class="field">
+        <label for="name">Name <span class="required" aria-label="required">*</span></label>
+        <input id="name" name="name" type="text" autocomplete="name" required aria-required="true" placeholder="Your name" />
+      </div>
 
-    <div class="field">
-      <label for="email">Your email (so I can reply)</label>
-      <input id="email" name="email" type="email" required />
-    </div>
+      <div class="field">
+        <label for="email">Email <span class="required" aria-label="required">*</span></label>
+        <input id="email" name="email" type="email" autocomplete="email" required aria-required="true" placeholder="your.email@example.com" />
+      </div>
 
-    <div class="field">
-      <label for="message">Message</label>
-      <textarea id="message" name="message" rows="6" required></textarea>
-    </div>
+      <div class="field">
+        <label for="message">Message <span class="required" aria-label="required">*</span></label>
+        <textarea id="message" name="message" rows="6" required aria-required="true" placeholder="Tell me about your inquiry..."></textarea>
+      </div>
 
-    <!-- Fixed subject + optional redirect after success -->
-    <input type="hidden" name="_subject" value="Portfolio enquiry from website" />
-    <!-- <input type="hidden" name="_next" value="/thanks.html" /> -->
+      <input type="hidden" name="_subject" value="Portfolio enquiry from hamzahissa.com" />
+      <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" />
 
-    <!-- Honeypot (hidden field to catch bots) -->
-    <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+      <button class="btn primary" type="submit">Send Message</button>
+      <p class="form-tip">I typically respond within 24-48 hours.</p>
+    </form>
 
-    <button class="btn primary" type="submit">Send</button>
-  </form>
+    <aside class="contact-info">
+      <div class="card soft">
+        <h3>Other Ways to Connect</h3>
+        <ul class="contact-methods" role="list">
+          <li>
+            <strong>Email:</strong>
+            <a href="mailto:hamzah.issa@gmail.com">hamzah.issa@gmail.com</a>
+          </li>
+          <li>
+            <strong>LinkedIn:</strong>
+            <a href="https://www.linkedin.com/in/hamzah-issa-69396822a/" target="_blank" rel="noopener noreferrer">Connect with me</a>
+          </li>
+          <li>
+            <strong>GitHub:</strong>
+            <a href="https://github.com/hamzissa" target="_blank" rel="noopener noreferrer">View my projects</a>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="card soft">
+        <h3>Quick Info</h3>
+        <ul class="facts" role="list">
+          <li>📍 Leicester, UK</li>
+          <li>🎓 University of Leicester</li>
+          <li>💼 Seeking placement 2026-2027</li>
+          <li>⚡ Usually responds quickly</li>
+        </ul>
+      </div>
+    </aside>
+  </div>
 
 
 </main>
 <footer class="site-footer">
-  <p>© <span id="year"></span> Hamzah Issa · <a href="mailto:hamzah.issa@gmail.com">hamzah.issa@gmail.com</a> · <a href="https://www.linkedin.com/in/hamzah-issa-69396822a/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/hamzissa" target="_blank" rel="noopener">GitHub</a></p>
+  <div class="footer-content">
+    <p>© <span id="year"></span> Hamzah Issa. All rights reserved.</p>
+    <nav class="footer-links" aria-label="Social links">
+      <a href="mailto:hamzah.issa@gmail.com" aria-label="Email Hamzah">Email</a>
+      <a href="https://www.linkedin.com/in/hamzah-issa-69396822a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">LinkedIn</a>
+      <a href="https://github.com/hamzissa" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">GitHub</a>
+    </nav>
+  </div>
 </footer>
 
 </body>
-<script>
-  (function(){
-    const form = document.getElementById('contactForm');
-    if(!form) return;
-
-    form.addEventListener('submit', async (e) => {
-      // simple client validation
-      const name = (document.getElementById('name')?.value || '').trim();
-      const email = (document.getElementById('email')?.value || '').trim();
-      const msg = (document.getElementById('message')?.value || '').trim();
-      if (!name || !email || !msg) { e.preventDefault(); alert('Please fill out all fields.'); return; }
-
-      e.preventDefault();
-      const body = new FormData(form);
-      try {
-        const res = await fetch(form.action, {
-          method: 'POST',
-          body,
-          headers: { 'Accept': 'application/json' }
-        });
-        if (res.ok) {
-          form.reset();
-          alert('Thanks — your message has been sent!');
-        } else {
-          alert('Sorry, something went wrong. Please try again later.');
-        }
-      } catch {
-        alert('Network error. Please try again.');
-      }
-    });
-  })();
-</script>
-
 </html>

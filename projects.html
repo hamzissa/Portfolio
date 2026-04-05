@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Projects · Hamzah Issa | Portfolio</title>
   <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="theme-color" content="#0ea5e9">
-<meta name="description" content="Portfolio of Hamzah Issa — BSc Software Engineering student at the University of Leicester." />
-<meta property="og:title" content="Hamzah Issa | Portfolio" />
-<meta property="og:description" content="Projects, experience, and contact details." />
-<meta property="og:type" content="website" />
-<meta property="og:image" content="assets/placeholder-profile.svg" />
-<link rel="icon" href="assets/software_engineering_logo.png" type="image/svg+xml" />
-<link rel="stylesheet" href="styles.css" />
-<script defer src="script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects | Hamzah Issa</title>
+  <meta name="description" content="Explore Hamzah Issa's software engineering projects including Java applications, game development, and web development work." />
+  <meta name="theme-color" content="#0ea5e9" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#0ea5e9" media="(prefers-color-scheme: light)" />
+  
+  <meta property="og:title" content="Projects by Hamzah Issa" />
+  <meta property="og:description" content="Software engineering projects showcasing Java, GDScript, and web development skills." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://hamzahissa.com/projects.html" />
+  <meta property="og:image" content="https://hamzahissa.com/assets/software_engineering_logo.png" />
+  
+  <link rel="icon" href="assets/software_engineering_logo.png" />
+  <link rel="canonical" href="https://hamzahissa.com/projects.html" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9QEYBSEJPM"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-9QEYBSEJPM');
   </script>
 </head>
-<!-- Google tag (gtag.js) -->
 
 <body>
 <header class="site-header">
@@ -55,49 +58,59 @@
   </section>
 
   <section class="projects-grid">
-    <article class="project-card">
+    <article class="project-card card">
       <div class="project-card-body">
+        <div class="project-icon" aria-hidden="true">💪</div>
         <h3>FitAll Gym Management System</h3>
-        <p>Java OOP project featuring booking & scheduling, plus UML diagrams and MVC structure.</p>
-        <ul class="meta">
-          <li>Java</li><li>UML</li><li>MVC</li>
+        <p>Full-featured gym management application built with Java, demonstrating object-oriented programming principles. Includes member booking, class scheduling, and administrative features with a clean MVC architecture.</p>
+        <ul class="meta" role="list" aria-label="Technologies used">
+          <li>Java</li><li>OOP</li><li>UML</li><li>MVC</li>
         </ul>
       </div>
       <div class="project-card-actions">
-        <a class="btn small" href="https://github.com/hamzissa/FitAll" aria-disabled="true">GitHub Code</a>
+        <a class="btn small" href="https://github.com/hamzissa/FitAll" target="_blank" rel="noopener noreferrer">View Code</a>
       </div>
     </article>
 
-    <article class="project-card">
+    <article class="project-card card">
       <div class="project-card-body">
+        <div class="project-icon" aria-hidden="true">🧟</div>
         <h3>Zombie Survival Game</h3>
-        <p>Godot/GDScript A‑Level project with enemy AI, scoring, and UI elements.</p>
-        <ul class="meta">
-          <li>Godot</li><li>GDScript</li>
+        <p>Action-packed survival game developed in Godot Engine for A-Level Computer Science. Features intelligent enemy AI, wave-based progression, power-up systems, and polished UI/UX elements.</p>
+        <ul class="meta" role="list" aria-label="Technologies used">
+          <li>Godot Engine</li><li>GDScript</li><li>Game Design</li>
         </ul>
       </div>
       <div class="project-card-actions">
-        <a class="btn small" href="https://github.com/hamzissa/My-Project" aria-disabled="true">GitHub Code</a>
+        <a class="btn small" href="https://github.com/hamzissa/My-Project" target="_blank" rel="noopener noreferrer">View Code</a>
       </div>
     </article>
 
-    <article class="project-card">
+    <article class="project-card card">
       <div class="project-card-body">
+        <div class="project-icon" aria-hidden="true">🌐</div>
         <h3>Portfolio Website</h3>
-        <p>Responsive site (this one!) with accessible HTML, modern CSS, JS enhancements, and dark mode.</p>
-        <ul class="meta">
-          <li>HTML</li><li>CSS</li><li>JS</li>
+        <p>Modern, fully responsive portfolio website built with vanilla HTML, CSS, and JavaScript. Features include dark/light theme switching with system preference detection, accessible navigation, and optimized performance.</p>
+        <ul class="meta" role="list" aria-label="Technologies used">
+          <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Accessibility</li>
         </ul>
       </div>
       <div class="project-card-actions">
-        <a class="btn small" href="https://github.com/hamzissa/Portfolio" target="_blank" rel="noopener">GitHub Code</a>
-        <a class="btn small" href="index.html">Live</a>
+        <a class="btn small" href="https://github.com/hamzissa/Portfolio" target="_blank" rel="noopener noreferrer">View Code</a>
+        <a class="btn small primary" href="index.html">Live Demo</a>
       </div>
     </article>
   </section>
 </main>
 <footer class="site-footer">
-  <p>© <span id="year"></span> Hamzah Issa · <a href="mailto:hamzah.issa@gmail.com">hamzah.issa@gmail.com</a> · <a href="https://www.linkedin.com/in/hamzah-issa-69396822a/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/hamzissa" target="_blank" rel="noopener">GitHub</a></p>
+  <div class="footer-content">
+    <p>© <span id="year"></span> Hamzah Issa. All rights reserved.</p>
+    <nav class="footer-links" aria-label="Social links">
+      <a href="mailto:hamzah.issa@gmail.com" aria-label="Email Hamzah">Email</a>
+      <a href="https://www.linkedin.com/in/hamzah-issa-69396822a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">LinkedIn</a>
+      <a href="https://github.com/hamzissa" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">GitHub</a>
+    </nav>
+  </div>
 </footer>
 
 </body>

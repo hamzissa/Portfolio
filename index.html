@@ -1,28 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Hamzah Issa | Portfolio</title>
   <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="theme-color" content="#0ea5e9">
-<meta name="description" content="Portfolio of Hamzah Issa — BSc Software Engineering student at the University of Leicester." />
-<meta property="og:title" content="Hamzah Issa | Portfolio" />
-<meta property="og:description" content="Projects, experience, and contact details." />
-<meta property="og:type" content="website" />
-<meta property="og:image" content="assets/placeholder-profile.svg" />
-<link rel="icon" href="assets/software_engineering_logo.png"  />
-<link rel="stylesheet" href="styles.css" />
-<script defer src="script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hamzah Issa | Software Engineering Student</title>
+  <meta name="description" content="Software Engineering student at University of Leicester specializing in Java, C#, and web development. Available for placement year opportunities 2026-2027." />
+  <meta name="keywords" content="software engineering, Java developer, C# developer, web development, placement year, Leicester" />
+  <meta name="author" content="Hamzah Issa" />
+  <meta name="theme-color" content="#0ea5e9" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#0ea5e9" media="(prefers-color-scheme: light)" />
+  
+  <meta property="og:title" content="Hamzah Issa | Software Engineering Student" />
+  <meta property="og:description" content="BSc Software Engineering student at University of Leicester. Building clean, reliable software with Java, C#, and modern web technologies." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://hamzahissa.com" />
+  <meta property="og:image" content="https://hamzahissa.com/assets/software_engineering_logo.png" />
+  
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Hamzah Issa | Software Engineering Student" />
+  <meta name="twitter:description" content="BSc Software Engineering student at University of Leicester" />
+  <meta name="twitter:image" content="https://hamzahissa.com/assets/software_engineering_logo.png" />
+  
+  <link rel="icon" href="assets/software_engineering_logo.png" />
+  <link rel="canonical" href="https://hamzahissa.com" />
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9QEYBSEJPM"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-9QEYBSEJPM');
   </script>
 </head>
-<!-- Google tag (gtag.js) -->
 
 <body>
 <header class="site-header">
@@ -55,36 +66,46 @@
       <p class="lead">BSc Software Engineering student at the University of Leicester (2024–2028, with placement year). I enjoy building clean, reliable software with Java, C#, and modern web tech.</p>
       <div class="hero-cta">
         <a class="btn primary" href="projects.html">See my projects</a>
-        <a class="btn" href="assets/Hamzah_Software_CV%20.pdf" download>Download my CV</a>
+        <a class="btn" href="assets/Hamzah_Software_CV%20.pdf" download aria-label="Download Hamzah's CV as PDF">Download CV</a>
       </div>
-      <ul class="quick-highlights">
+      <ul class="quick-highlights" aria-label="Technical skills">
         <li>Java · C# · GDScript</li>
         <li>HTML · CSS · JavaScript</li>
-        <li>Jquery · SQL · Git</li>
+        <li>jQuery · SQL · Git</li>
       </ul>
     </div>
     <picture class="hero-art">
-      <img src="assets/software_engineering_logo.png" alt="Illustration of Hamzah working on code" />
+      <img src="assets/software_engineering_logo.png" alt="Software engineering logo" width="400" height="400" loading="eager" />
     </picture>
   </section>
 
   <section class="grid-3 features" aria-label="Core skills">
     <article class="card">
-      <h3>Backend</h3>
-      <p>Java, Python, JavaScript, SQL, C#, GDScript.</p>
+      <div class="card-icon" aria-hidden="true">⚙️</div>
+      <h3>Backend Development</h3>
+      <p>Building robust systems with Java, C#, Python, and SQL databases.</p>
     </article>
     <article class="card">
-      <h3>Frontend</h3>
-      <p>Accessible, responsive UIs with semantic HTML, modern CSS, and JS.</p>
+      <div class="card-icon" aria-hidden="true">🎨</div>
+      <h3>Frontend Development</h3>
+      <p>Creating accessible, responsive UIs with semantic HTML, modern CSS, and JavaScript.</p>
     </article>
     <article class="card">
-      <h3>Teamwork</h3>
-      <p>Agile, Git workflows, clear documentation, and pragmatic problem-solving.</p>
+      <div class="card-icon" aria-hidden="true">🤝</div>
+      <h3>Collaboration</h3>
+      <p>Agile methodologies, Git workflows, clear documentation, and effective problem-solving.</p>
     </article>
   </section>
 </main>
 <footer class="site-footer">
-  <p>© <span id="year"></span> Hamzah Issa · <a href="mailto:hamzah.issa@gmail.com">hamzah.issa@gmail.com</a> · <a href="https://www.linkedin.com/in/hamzah-issa-69396822a/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/hamzissa" target="_blank" rel="noopener">GitHub</a></p>
+  <div class="footer-content">
+    <p>© <span id="year"></span> Hamzah Issa. All rights reserved.</p>
+    <nav class="footer-links" aria-label="Social links">
+      <a href="mailto:hamzah.issa@gmail.com" aria-label="Email Hamzah">Email</a>
+      <a href="https://www.linkedin.com/in/hamzah-issa-69396822a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">LinkedIn</a>
+      <a href="https://github.com/hamzissa" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">GitHub</a>
+    </nav>
+  </div>
 </footer>
 
 </body>

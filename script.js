@@ -53,19 +53,67 @@
     });
   }
 
-  // --- Contact form guard (mailto) ---
+  // --- Contact form handling ---
   const form = document.getElementById('contactForm');
   if (form) {
-    form.addEventListener('submit', (e) => {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      
       const name = (document.getElementById('name')?.value || '').trim();
       const email = (document.getElementById('email')?.value || '').trim();
       const msg = (document.getElementById('message')?.value || '').trim();
+      
       if (!name || !email || !msg) {
+        alert('Please fill out all required fields.');
+        return;
+      }
+      
+      const submitBtn = form.querySelector('button[type="submit"]');
+      const originalText = submitBtn.textContent;
+      submitBtn.textContent = 'Sending...';
+      submitBtn.disabled = true;
+      
+      try {
+        const res = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { 'Accept': 'application/json' }
+        });
+        
+        if (res.ok) {
+          form.reset();
+          alert('Thank you! Your message has been sent successfully. I\'ll get back to you soon.');
+        } else {
+          alert('Oops! Something went wrong. Please try again or email me directly.');
+        }
+      } catch {
+        alert('Network error. Please check your connection and try again.');
+      } finally {
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+      }
+    });
+  }
+
+  // --- Smooth scroll for internal links ---
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
         e.preventDefault();
-        alert('Please fill out all fields before sending.');
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+
+  // --- Performance: Lazy load images ---
+  if ('loading' in HTMLImageElement.prototype) {
+    const images = document.querySelectorAll('img[loading="lazy"]');
+    images.forEach(img => {
+      if (img.dataset.src) {
+        img.src = img.dataset.src;
       }
     });
   }
 })();
-// Contact form -> mailto
 
