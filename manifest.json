@@ -1,0 +1,16 @@
+{
+  "name": "Hamzah Issa Portfolio",
+  "short_name": "Hamzah Issa",
+  "description": "Portfolio of Hamzah Issa - Software Engineering Student",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b0e12",
+  "theme_color": "#0ea5e9",
+  "icons": [
+    {
+      "src": "assets/software_engineering_logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

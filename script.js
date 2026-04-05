@@ -115,5 +115,41 @@
       }
     });
   }
+
+  // --- Accessibility: Skip to main content ---
+  const skipLink = document.createElement('a');
+  skipLink.href = '#main';
+  skipLink.textContent = 'Skip to main content';
+  skipLink.className = 'skip-link';
+  skipLink.style.cssText = 'position:absolute;top:-40px;left:0;background:var(--brand);color:#fff;padding:8px;z-index:100;text-decoration:none';
+  skipLink.addEventListener('focus', () => {
+    skipLink.style.top = '0';
+  });
+  skipLink.addEventListener('blur', () => {
+    skipLink.style.top = '-40px';
+  });
+  document.body.insertBefore(skipLink, document.body.firstChild);
+
+  // Add id to main if not present
+  const main = document.querySelector('main');
+  if (main && !main.id) {
+    main.id = 'main';
+    main.setAttribute('tabindex', '-1');
+  }
+
+  // --- Analytics: Track CTA clicks ---
+  document.querySelectorAll('a[href*="projects"], a[href*=".pdf"], a[href*="github"]').forEach(link => {
+    link.addEventListener('click', function(e) {
+      const linkText = this.textContent.trim();
+      const linkHref = this.getAttribute('href');
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'click', {
+          'event_category': 'CTA',
+          'event_label': linkText,
+          'value': linkHref
+        });
+      }
+    });
+  });
 })();
 
