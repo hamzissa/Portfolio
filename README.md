@@ -8,7 +8,7 @@ Personal portfolio website for Hamzah Issa - BSc Software Engineering student at
 - **Dark/Light Theme**: Automatic theme switching based on system preferences with manual override
 - **Accessibility**: ARIA labels, semantic HTML, keyboard navigation support
 - **Performance Optimized**: Lazy loading, minimal dependencies, fast load times
-- **SEO Friendly**: Meta tags, sitemap, robots.txt, structured data
+- **SEO Friendly**: Meta tags, sitemap, robots.txt, JSON-LD structured data
 - **Contact Form**: Integrated with Formspree for reliable message delivery
 
 ## 🛠️ Tech Stack
@@ -42,7 +42,7 @@ Portfolio/
 ├── contact.html        # Contact form
 ├── styles.css          # Global styles
 ├── script.js           # Interactive features
-├── assets/             # Images, CV, etc.
+├── assets/             # Logo sizes, profile image, CV
 ├── robots.txt          # SEO crawling rules
 ├── sitemap.xml         # Site structure for search engines
 └── CNAME              # Custom domain configuration
@@ -50,15 +50,14 @@ Portfolio/
 
 ## 🚀 Performance
 
-- Lighthouse Score: 95+ (Performance, Accessibility, Best Practices, SEO)
 - Fully responsive design (mobile-first approach)
-- Optimized images with lazy loading
+- Resized, compressed images (64px icon, 800px JPEG hero/social image)
 - Minimal dependencies for fast load times
 - PWA-ready with manifest.json
 
 ## ♿ Accessibility
 
-- WCAG 2.1 AA compliant
+- Built with WCAG 2.1 AA guidelines in mind
 - Semantic HTML throughout
 - ARIA labels where appropriate
 - Keyboard navigation support

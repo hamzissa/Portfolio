@@ -5,17 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>About Me | Hamzah Issa</title>
   <meta name="description" content="Learn more about Hamzah Issa, a Software Engineering student at University of Leicester specializing in full-stack development with Spring Boot, React, and MySQL." />
-  <meta name="theme-color" content="#0ea5e9" media="(prefers-color-scheme: dark)" />
-  <meta name="theme-color" content="#0ea5e9" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0ea5e9" />
   
   <meta property="og:title" content="About Hamzah Issa" />
   <meta property="og:description" content="Software Engineering student passionate about backend development and clean architecture." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://hamzahissa.com/about.html" />
-  <meta property="og:image" content="https://hamzahissa.com/assets/software_engineering_logo.png" />
+  <meta property="og:image" content="https://hamzahissa.com/assets/logo-800.jpg" />
   
-  <link rel="icon" href="assets/software_engineering_logo.png" />
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/logo-64.png" />
+  <link rel="apple-touch-icon" href="assets/logo-192.png" />
   <link rel="canonical" href="https://hamzahissa.com/about.html" />
+  <script>
+    // Set the theme before first paint to avoid a flash of the wrong theme
+    (function () {
+      var t;
+      try { t = localStorage.getItem('hamzah-theme'); } catch (e) {}
+      if (!t) t = window.matchMedia && matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+      document.documentElement.dataset.theme = t;
+    })();
+  </script>
   <link rel="stylesheet" href="styles.css" />
   <script defer src="script.js"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9QEYBSEJPM"></script>
@@ -28,9 +37,10 @@
 </head>
 
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <header class="site-header">
   <a class="brand" href="index.html" aria-label="Go to home">
-    <img src="assets/software_engineering_logo.png" alt="" class="brand-mark" width="28" height="28" />
+    <img src="assets/logo-64.png" alt="" class="brand-mark" width="28" height="28" />
     <span class="brand-text">Hamzah Issa</span>
   </a>
   <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle menu">
@@ -47,11 +57,10 @@
       <span class="icon sun">☀️</span>
       <span class="icon moon">🌙</span>
     </button>
-
   </nav>
 </header>
 
-<main class="container">
+<main id="main" class="container" tabindex="-1">
   <section class="page-head">
     <h1>About</h1>
     <p class="lead">I’m Hamzah Issa, a Software Engineering student focused on building helpful, well‑structured applications.</p>
@@ -60,7 +69,7 @@
   <section class="split">
     <div>
       <h2>Background</h2>
-      <p>I'm currently pursuing a BSc in Software Engineering at the University of Leicester (2024–2028, including placement year). My expertise spans full-stack development with Spring Boot, React, and MySQL, combined with demonstrated leadership in managing and mentoring development teams. I've successfully led projects for enterprise clients including IBM, where I managed cross-functional teams, facilitated Agile ceremonies, and delivered production-grade software while maintaining rigorous quality standards.</p>
+      <p>I'm currently pursuing a BSc in Software Engineering at the University of Leicester (2024–2027) and am on track for First-Class Honours. My expertise spans full-stack development with Spring Boot, React, and MySQL, combined with demonstrated leadership in managing and mentoring development teams. I've successfully led projects for enterprise clients including IBM, where I managed cross-functional teams, facilitated Agile ceremonies, and delivered production-grade software while maintaining rigorous quality standards.</p>
       
       <h2>Technical Skills</h2>
       <div class="skills-section">
@@ -102,14 +111,16 @@
       </div>
       
       <h2>What I'm Looking For</h2>
-      <p>I'm actively seeking a placement year opportunity (2026–2027) where I can leverage my technical skills and proven leadership experience. Having successfully managed teams of up to 6 developers and delivered enterprise projects to clients like IBM, I'm prepared to contribute as both a skilled full-stack developer and a potential technical lead or team coordinator. I thrive in collaborative environments and am eager to work alongside experienced engineers, lead initiatives, and make significant contributions to impactful, production-scale projects.</p>
+      <p>I'm actively seeking a graduate software engineering role starting in 2027 where I can apply my technical skills and proven leadership experience. Having successfully managed teams of up to 6 developers and delivered enterprise projects to clients like IBM, I'm prepared to contribute as both a skilled full-stack developer and a potential technical lead or team coordinator. I thrive in collaborative environments and am eager to work alongside experienced engineers, lead initiatives, and make significant contributions to impactful, production-scale projects.</p>
     </div>
     <aside class="aside">
-      <img class="profile" src="assets/software_engineering_logo.png" alt="Software engineering logo" width="300" height="300" loading="lazy" />
+      <img class="profile" src="assets/placeholder-profile.svg" alt="" width="300" height="300" loading="lazy" />
       <div class="card soft">
         <h3>Quick facts</h3>
         <ul class="facts" role="list">
           <li>📍 Based in Leicester, UK</li>
+          <li>🎓 On track for First-Class Honours</li>
+          <li>💼 Seeking graduate roles for 2027</li>
           <li>👥 Led teams of up to 6 developers</li>
           <li>🏢 Delivered projects for IBM</li>
           <li>💻 Full-stack & leadership focused</li>

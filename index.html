@@ -4,24 +4,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Hamzah Issa | Software Engineering Student</title>
-  <meta name="description" content="Software Engineering student at University of Leicester with proven technical leadership experience. Led teams of up to 6 developers and delivered enterprise projects for IBM. Seeking placement 2026-2027." />
-  <meta name="keywords" content="software engineering, Java developer, C# developer, web development, placement year, Leicester, Spring Boot, React, team leader, IBM" />
+  <meta name="description" content="Software Engineering student at University of Leicester with proven technical leadership experience. On track for First-Class Honours. Led teams of up to 6 developers and delivered enterprise projects for IBM. Seeking a graduate software engineering role for 2027." />
+  <meta name="keywords" content="software engineering, Java developer, C# developer, web development, graduate software engineer, Leicester, Spring Boot, React, team leader, IBM" />
   <meta name="author" content="Hamzah Issa" />
-  <meta name="theme-color" content="#0ea5e9" media="(prefers-color-scheme: dark)" />
-  <meta name="theme-color" content="#0ea5e9" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0ea5e9" />
   
   <meta property="og:title" content="Hamzah Issa | Software Engineering Student" />
   <meta property="og:description" content="BSc Software Engineering student with enterprise project delivery experience. Led 6-person team for IBM. Full-stack developer and technical leader." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://hamzahissa.com" />
-  <meta property="og:image" content="https://hamzahissa.com/assets/software_engineering_logo.png" />
+  <meta property="og:image" content="https://hamzahissa.com/assets/logo-800.jpg" />
   
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Hamzah Issa | Software Engineering Student" />
   <meta name="twitter:description" content="BSc Software Engineering student at University of Leicester" />
-  <meta name="twitter:image" content="https://hamzahissa.com/assets/software_engineering_logo.png" />
+  <meta name="twitter:image" content="https://hamzahissa.com/assets/logo-800.jpg" />
   
-  <link rel="icon" href="assets/software_engineering_logo.png" />
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/logo-64.png" />
+  <link rel="apple-touch-icon" href="assets/logo-192.png" />
   <link rel="canonical" href="https://hamzahissa.com" />
   <link rel="preconnect" href="https://www.googletagmanager.com" />
   <link rel="manifest" href="manifest.json" />
@@ -29,6 +29,15 @@
   <!-- Performance optimization -->
   <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
   
+  <script>
+    // Set the theme before first paint to avoid a flash of the wrong theme
+    (function () {
+      var t;
+      try { t = localStorage.getItem('hamzah-theme'); } catch (e) {}
+      if (!t) t = window.matchMedia && matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+      document.documentElement.dataset.theme = t;
+    })();
+  </script>
   <link rel="stylesheet" href="styles.css" />
   <script defer src="script.js"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9QEYBSEJPM"></script>
@@ -38,12 +47,28 @@
     gtag('js', new Date());
     gtag('config', 'G-9QEYBSEJPM');
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Hamzah Issa",
+    "url": "https://hamzahissa.com",
+    "jobTitle": "Software Engineering Student",
+    "email": "mailto:hamzah.issa@gmail.com",
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "University of Leicester" },
+    "sameAs": [
+      "https://www.linkedin.com/in/hamzah-issa-69396822a/",
+      "https://github.com/hamzissa"
+    ]
+  }
+  </script>
 </head>
 
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <header class="site-header">
   <a class="brand" href="index.html" aria-label="Go to home">
-    <img src="assets/software_engineering_logo.png" alt="" class="brand-mark" width="28" height="28" />
+    <img src="assets/logo-64.png" alt="" class="brand-mark" width="28" height="28" />
     <span class="brand-text">Hamzah Issa</span>
   </a>
   <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle menu">
@@ -60,18 +85,17 @@
       <span class="icon sun">☀️</span>
       <span class="icon moon">🌙</span>
     </button>
-
   </nav>
 </header>
 
-<main class="container">
+<main id="main" class="container" tabindex="-1">
   <section class="hero">
     <div class="hero-text">
       <h1>Hi, I'm Hamzah 👋</h1>
-      <p class="lead">BSc Software Engineering student at the University of Leicester (2024–2028, with placement year). Full-stack developer and proven technical leader with experience managing teams of up to 6 developers and delivering enterprise projects for IBM.</p>
+      <p class="lead">BSc Software Engineering student at the University of Leicester (2024–2027), on track for First-Class Honours and looking for a graduate software engineering role starting in 2027. Full-stack developer and proven technical leader with experience managing teams of up to 6 developers and delivering enterprise projects for IBM.</p>
       <div class="hero-cta">
         <a class="btn primary" href="projects.html">See my projects</a>
-        <a class="btn" href="assets/Hamzah_Software_CV%20.pdf" download aria-label="Download Hamzah's CV as PDF">Download CV</a>
+        <a class="btn" href="assets/Hamzah_Issa_CV.pdf" download aria-label="Download Hamzah's CV as PDF">Download CV</a>
       </div>
       <ul class="quick-highlights" aria-label="Technical skills">
         <li>Spring Boot · React · MySQL</li>
@@ -80,7 +104,7 @@
       </ul>
     </div>
     <picture class="hero-art">
-      <img src="assets/software_engineering_logo.png" alt="Software engineering logo" width="400" height="400" loading="eager" />
+      <img src="assets/logo-800.jpg" alt="Software engineering logo" width="400" height="400" loading="eager" />
     </picture>
   </section>
 
