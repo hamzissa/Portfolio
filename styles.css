@@ -33,13 +33,17 @@ body{
   padding: clamp(16px, 3vw, 28px);
 }
 
+/* Hidden off-screen until a keyboard user tabs to it */
 .skip-link{
-  position:absolute; top:-48px; left:8px; z-index:100;
+  position:absolute; left:8px; top:0; z-index:100;
   padding:8px 12px; border-radius:0 0 8px 8px;
   background:var(--brand); color:#0b0e12; font-weight:700; text-decoration:none;
-  transition: top var(--transition);
+  transform:translateY(-120%);
 }
-.skip-link:focus{top:0}
+.skip-link:not(:focus-visible){
+  clip-path:inset(50%); width:1px; height:1px; overflow:hidden; white-space:nowrap; padding:0;
+}
+.skip-link:focus-visible{transform:none}
 main:focus{outline:none}
 
 .site-header{
