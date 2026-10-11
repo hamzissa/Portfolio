@@ -52,7 +52,7 @@ Portfolio/
 ## 🚀 Performance
 
 - Fully responsive design (mobile-first approach)
-- Resized, compressed images (64px icon, 800px JPEG hero/social image)
+- Lightweight assets (SVG monogram icon, compressed profile photo)
 - Minimal dependencies for fast load times
 - PWA-ready with manifest.json
 
