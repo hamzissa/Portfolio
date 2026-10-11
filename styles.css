@@ -390,3 +390,5 @@ main:focus{outline:none}
 [data-theme="light"] .field textarea[aria-invalid="true"]{
   border-color: #ef4444;
 }
+
+.private-note{color:var(--muted); font-size:14px; align-self:center}
