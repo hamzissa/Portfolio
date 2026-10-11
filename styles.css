@@ -113,7 +113,6 @@ main:focus{outline:none}
 .card-icon{font-size: 2rem; margin-bottom: 8px}
 
 .split{display:grid; grid-template-columns: 1.2fr .8fr; gap:24px}
-.aside .profile{width:100%; border-radius:14px; border:1px solid var(--border); background:#0a0f15}
 
 .skills-section{margin-top: 16px}
 .skill-category{
