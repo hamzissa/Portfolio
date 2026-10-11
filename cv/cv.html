@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Hamzah Issa – CV</title>
+<style>
+  @page { size: A4; margin: 11mm 15mm; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 9.5pt/1.35 "Helvetica Neue", Helvetica, Arial, sans-serif; color: #1a1f29; }
+  a { color: inherit; text-decoration: none; }
+  header { text-align: center; margin-bottom: 8pt; }
+  h1 { font-size: 21pt; margin: 0 0 3pt; letter-spacing: .3pt; }
+  .contact { font-size: 9pt; color: #374151; }
+  .contact span + span::before { content: " · "; color: #9ca3af; }
+  h2 { font-size: 10.5pt; text-transform: uppercase; letter-spacing: .8pt; color: #0369a1;
+       border-bottom: 1px solid #cbd5e1; padding-bottom: 2pt; margin: 8pt 0 4pt; }
+  p { margin: 0; }
+  .row { display: flex; justify-content: space-between; align-items: baseline; gap: 10pt; }
+  .row strong { font-size: 10pt; }
+  .date { white-space: nowrap; color: #4b5563; font-size: 9pt; }
+  .sub { color: #4b5563; font-style: italic; }
+  ul { margin: 2pt 0 0; padding-left: 13pt; }
+  li { margin: 1pt 0; }
+  .item { margin-bottom: 5pt; }
+  .item:last-child { margin-bottom: 0; }
+  .skills { display: grid; grid-template-columns: 100pt 1fr; gap: 1.5pt 6pt; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Hamzah Issa</h1>
+  <div class="contact">
+    <span>Leicester, UK</span><span>07936 325776</span><span><a href="mailto:hamzah.issa@gmail.com">hamzah.issa@gmail.com</a></span>
+  </div>
+  <div class="contact">
+    <span><a href="https://hamzahissa.com">hamzahissa.com</a></span><span><a href="https://github.com/hamzissa">github.com/hamzissa</a></span><span><a href="https://www.linkedin.com/in/hamzah-issa-69396822a/">linkedin.com/in/hamzah-issa-69396822a</a></span>
+  </div>
+</header>
+
+<h2>Profile</h2>
+<p>Final-year Software Engineering student at the University of Leicester, on track for First-Class Honours and graduating in 2027. Full-stack developer working mainly in Java and Spring Boot, with hands-on leadership experience as Senior Developer and Scrum Master of a 6-person team that delivered a web application for IBM. Looking for a graduate software engineering role starting in 2027.</p>
+
+<h2>Education</h2>
+<div class="item">
+  <div class="row"><strong>University of Leicester – BSc Software Engineering</strong><span class="date">Sep 2024 – Jul 2027</span></div>
+  <ul>
+    <li>On track for First-Class Honours</li>
+    <li>Modules include Object-Oriented Programming, Web Development, Algorithms and Computer Systems</li>
+  </ul>
+</div>
+<div class="item">
+  <div class="row"><strong>WQE – A-Levels</strong><span class="date">Sep 2022 – Jul 2024</span></div>
+  <p>Computer Science (B), Economics (B), Maths (C)</p>
+</div>
+<div class="item">
+  <div class="row"><strong>Judgemeadow Community College – GCSEs</strong><span class="date">2017 – 2022</span></div>
+  <p>9 GCSEs A*–C including English and Maths</p>
+</div>
+
+<h2>Projects</h2>
+<div class="item">
+  <div class="row"><strong>IBM SkillsBuild Learning Tracker</strong><span class="date">Spring Boot · Spring Data JPA · JSP · GitLab</span></div>
+  <p class="sub">Senior Developer &amp; Scrum Master, 6-person team project for IBM</p>
+  <ul>
+    <li>Led the team through the full lifecycle, running sprint planning, daily stand-ups and retrospectives</li>
+    <li>Built a web app that lets students search IBM SkillsBuild courses, track progress and earn XP on completion</li>
+    <li>Reviewed code against a shared Definition of Done and managed the GitLab branching and merge workflow</li>
+    <li>Presented the final product to IBM stakeholders</li>
+  </ul>
+</div>
+<div class="item">
+  <div class="row"><strong>Doerly – Task Marketplace</strong><span class="date">Spring Boot · React · MySQL · REST</span></div>
+  <ul>
+    <li>Full-stack platform connecting people who need tasks done with people willing to do them</li>
+    <li>Built task creation and management, offers and bidding, and in-app messaging behind a Spring Boot REST API</li>
+  </ul>
+</div>
+<div class="item">
+  <div class="row"><strong>Street Food Directory</strong><span class="date">Spring Boot · Spring Data JPA · MySQL</span></div>
+  <ul>
+    <li>Web app to browse and manage vendors, dishes, reviews, photos and awards, with search by vendor or dish</li>
+    <li>Designed a relational data model with one-to-one, one-to-many and many-to-many JPA mappings</li>
+  </ul>
+</div>
+<div class="item">
+  <div class="row"><strong>Tic-Tac-Toe AI</strong><span class="date">Python · pygame</span></div>
+  <ul>
+    <li>Two-person project with an unbeatable minimax AI opponent; set up and taught our Git workflow</li>
+  </ul>
+</div>
+
+<h2>Work Experience</h2>
+<div class="item">
+  <div class="row"><strong>H2SS – Admin Assistant</strong><span class="date">Jul 2023 – Present</span></div>
+  <ul>
+    <li>Handle customer queries by phone and email, improving response times</li>
+    <li>Streamlined spreadsheet processes, reducing admin workload by 25%; coordinate daily staff schedules</li>
+  </ul>
+</div>
+<div class="item">
+  <div class="row"><strong>Asda – Picker</strong><span class="date">Nov 2024 – Apr 2025</span></div>
+  <ul>
+    <li>Picked and packed 80+ online orders per shift with 99% accuracy, meeting strict deadlines during peak periods</li>
+  </ul>
+</div>
+
+<h2>Skills &amp; Certifications</h2>
+<div class="skills">
+  <b>Languages</b><span>Java, Python, JavaScript, SQL, HTML/CSS, C# (basic)</span>
+  <b>Frameworks &amp; tools</b><span>Spring Boot, Spring Data JPA, React, MySQL, Git/GitLab, Gradle, Docker, IntelliJ</span>
+  <b>Ways of working</b><span>Agile/Scrum (Scrum Master), code review, mentoring, stakeholder presentations</span>
+  <b>Certifications</b><span>Forage job simulations: AWS Solutions Architecture, Electronic Arts Software Engineering · Udemy: Java, Web Development</span>
+</div>
+</body>
+</html>

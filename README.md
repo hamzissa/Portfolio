@@ -43,6 +43,7 @@ Portfolio/
 ├── styles.css          # Global styles
 ├── script.js           # Interactive features
 ├── assets/             # Logo sizes, profile image, CV
+├── cv/cv.html          # CV source (print to PDF → assets/Hamzah_Issa_CV.pdf)
 ├── robots.txt          # SEO crawling rules
 ├── sitemap.xml         # Site structure for search engines
 └── CNAME              # Custom domain configuration
@@ -73,3 +74,13 @@ Portfolio/
 - Email: hamzah.issa@gmail.com
 - LinkedIn: [Hamzah Issa](https://www.linkedin.com/in/hamzah-issa-69396822a/)
 - GitHub: [@hamzissa](https://github.com/hamzissa)
+
+## 📄 Updating the CV
+
+Edit `cv/cv.html`, then regenerate the PDF:
+
+```bash
+"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless --no-pdf-header-footer \
+  --print-to-pdf=assets/Hamzah_Issa_CV.pdf "file://$PWD/cv/cv.html"
+```
+
