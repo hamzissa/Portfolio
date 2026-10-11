@@ -42,7 +42,7 @@ Portfolio/
 ├── contact.html        # Contact form
 ├── styles.css          # Global styles
 ├── script.js           # Interactive features
-├── assets/             # Logo sizes, profile image, CV
+├── assets/             # Logo sizes, profile photo, CV
 ├── cv/cv.html          # CV source (print to PDF → assets/Hamzah_Issa_CV.pdf)
 ├── robots.txt          # SEO crawling rules
 ├── sitemap.xml         # Site structure for search engines
